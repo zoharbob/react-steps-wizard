@@ -54,7 +54,7 @@ export const Step = styled.div`
   text-align: center;
   line-height: ${({ iconSize }) => iconSizes[iconSize]?.height || iconSizes.medium.height};
   color: ${({ isActive }) => isActive ? 'white' : 'grey'};
-  margin-bottom: 3px;
+  margin-bottom: 3px; 
   font-weight: ${({ isActive }) => isActive ? 'bold' : 'normal'};
   font-size: calc(${({ iconSize }) => (iconSizes[iconSize]?.width || iconSizes.medium.width)} - 8px);
 `;

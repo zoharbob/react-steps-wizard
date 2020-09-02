@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {Step} from './lib/Step';
-import {Stepper} from './lib/Stepper';
+import {Step, Stepper} from './lib';
 
 function App() {
 
