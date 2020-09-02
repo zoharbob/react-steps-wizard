@@ -1,3 +1,1 @@
-import Stepper from './Stepper.jsx';
-
-export {Stepper};
+export {default as Stepper} from './Stepper';
