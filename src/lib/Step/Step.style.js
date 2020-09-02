@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from "styled-components";
 import {ReactComponent as CheckIcon} from "../assets/check-circle-solid.svg";
 import {ReactComponent as ErrorIcon} from "../assets/times-circle-solid.svg";
@@ -6,15 +7,15 @@ const iconSizes = {
     small: {width: '16px', height: '16px'},
     medium: {width: '24px', height: '24px'},
     large: {width: '32px', height: '32px'},
-}
+};
 
-export const Icon = styled(CheckIcon)`
+export const Icon = styled(props => <CheckIcon {...props} />)`
   color: dodgerblue;
   width: ${({ iconSize }) => iconSizes[iconSize]?.width || iconSizes.medium.width} ;
   height: ${({ iconSize }) => iconSizes[iconSize]?.height || iconSizes.medium.height};
 `;
 
-export const IconError = styled(ErrorIcon)`
+export const IconError = styled(props => <ErrorIcon {...props} />)`
   color: #dc3333;
   width: ${({ iconSize }) => iconSizes[iconSize]?.width || iconSizes.medium.width} ;
   height: ${({ iconSize }) => iconSizes[iconSize]?.height || iconSizes.medium.height};
