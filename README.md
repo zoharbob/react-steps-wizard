@@ -26,7 +26,7 @@
 
 ### **Usage:** 
 
-```
+```js
   import React from "react";
   import ReactDOM from "react-dom";
   import {Stepper, Step} from 'react-steps-wizard';
