@@ -1,27 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {Step, Stepper} from './lib';
+import {Stepper, Step} from 'react-steps-wizard';
 
 function App() {
 
     const [current, setCurrent] = React.useState(0);
 
     const changeStep = direction => {
-        setCurrent(current + (direction === 'next' ? 1 : -1));
+        setCurrent(current => current + (direction === 'next' ? 1 : -1));
     }
 
     return (
-        <div>
+        <>
             <Stepper activeIndex={current} iconSize="large">
-                <Step title="some title" subtitle="some subtitle" />
-                <Step title="some title" subtitle="some subtitle" />
+                <Step title="Intro" subtitle="who we are" />
+                <Step title="Personal Details"  />
+                <Step title="Expectations" subtitle="what you expect from us" />
             </Stepper>
 
             <div>
                 <button onClick={() => changeStep('back')}>Back</button>
                 <button onClick={() => changeStep('next')}>Next</button>
             </div>
-        </div>
+        </>
     );
 }
 
