@@ -1,7 +1,2 @@
-import { Stepper } from './Stepper';
-import { Step } from './Step';
-
-export {
-    Stepper,
-    Step
-};
+export { Stepper } from './Stepper';
+export { Step } from './Step';
