@@ -1,10 +1,11 @@
 {
   "name": "react-steps-wizard",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2"
+    "@testing-library/user-event": "^7.1.2",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,8 +50,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-url": "^3.0.1",
-    "rollup-plugin-visualizer": "^4.1.1",
-    "styled-components": "^5.2.0"
+    "rollup-plugin-visualizer": "^4.1.1"
   },
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
